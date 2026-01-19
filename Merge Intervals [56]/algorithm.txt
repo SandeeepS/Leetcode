@@ -1,0 +1,11 @@
+step 1 : Sort intervals by start time (ascending order)
+
+step 2 : Initialize result array and track current merged interval
+
+step 3 : Iterate through sorted intervals:
+
+step 4 : If current interval overlaps with previous (curr[0] <= prev[1]), extend previous
+
+step 5 : Else, add previous to result and start new current interval
+
+step 6 : Add final interval to result
