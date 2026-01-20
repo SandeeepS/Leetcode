@@ -1,1 +1,25 @@
 ===============================================================================================================================================================================================
+* how to find overlaping intervals?
+        -If current starting time is less than ending time in previous interval, they are overlapping.
+
+  intervals = [[1,3],[2,6],[8,10],[15,18]]
+
+* Sort the given intervals with starting time  in acendeing order 
+
+* took the first interval as prev and took a empty array (merged) to store the resulting intervals
+        - prev = [1,3];
+        - merged = [];
+
+* ietrate through the intervals , i = 1 => refered as current ;
+        - compare current staring time ie, 2 <= 3  => true;
+
+* If true, we should merge them. After merging, the previous interval should [1, 6]. In prev, 
+  we already had 1 as starting time, so we don't do anything, but previous ending time is now 3 but we need 6 after merging.
+
+* additionaly Compare two ending time and take max number of ending time.and update to it 
+
+    in this case,
+    previous ending time vs current ending time
+    = 3 vs 6
+    = 6
+
