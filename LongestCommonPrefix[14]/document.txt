@@ -1,0 +1,5 @@
+
+Main logic 
+
+sorting the string , after sorting we only need to compare the first elemnt and last element , check the each character from both 
+first and last string , we can find the common prefix easly

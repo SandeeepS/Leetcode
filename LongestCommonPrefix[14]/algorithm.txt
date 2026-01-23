@@ -1,0 +1,16 @@
+
+step 1 : sort the given string 
+
+step 2 : take 4 variables , a)firstString - taske the first string 
+                            
+                            b)lastString - take the last string 
+                            
+                            c)maxLength - find the max length from firstString and lastString
+
+                            d)resultString - to store the value of the resulting string 
+
+step 3 : loop through the lastString and fristString parallelly and check the characters are same , if same concat with the resultString 
+        if not return the current value of resultString 
+
+
+step 4 : return resultString 
