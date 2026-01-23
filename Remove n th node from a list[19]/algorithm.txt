@@ -1,0 +1,35 @@
+
+step 1 : create a new node and point to the existing head
+         
+         let newNode = new ListNode(1,head);
+
+step 2 : create a dymmy pointer that point to new node;
+
+        let dummy = newNode;
+    
+step 3 : move the head using for loop , until  i < n 
+
+        for(let i = 0 ; i < n ; i++){
+            head = head.next;
+        }
+
+        - this is the main logic of the problem 
+          we are using a dummy pointer in the next step , and going to move the head again along with the dummy pointer parallelly ,
+          by doing that , when the head reach the end of the list , the dummy will reach the just before the target node . then we can 
+          change the pointer.
+
+step 4 : again loop until head reach the end of the list , along withe the head , move dummy , so dummy will reach the just before the target node 
+
+        - while(head){
+                head = head.next;
+                dummy = dummy.next;
+            }
+
+step 5 : change the pointer from the target node to the node after the target node 
+
+        - dummy = dummy.next.next;
+    
+step 6 : return the head, for that we can use 
+
+        - return newNode.next;
+
