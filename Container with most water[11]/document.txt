@@ -1,2 +1,8 @@
 given : array height 
-intention : 
+intention : return the maximum amount of water container can store.
+
+the logic : using the graph provided along with the question , we need to take 2 pointer left,right and left move forward and move 
+            right to backwards.check the beggest height and calculate the area , and also move the left / right according to checking the smallest or largest 
+            height .
+
+            
